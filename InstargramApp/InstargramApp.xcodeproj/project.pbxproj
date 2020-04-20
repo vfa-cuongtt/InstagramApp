@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C56012691953F2324AA8858 /* Pods_InstargramApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECF19DA0CB9A2C200A872AA /* Pods_InstargramApp.framework */; };
+		20E2F12C3780935EEF767904 /* Pods_InstargramApp_InstargramAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ADB92449CE00133C5EFF4F /* Pods_InstargramApp_InstargramAppUITests.framework */; };
+		B191B6D56D3D5071C63B4112 /* Pods_InstargramAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873484CFC57822B4CB907160 /* Pods_InstargramAppTests.framework */; };
 		B5979C142448740E004A2375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C132448740E004A2375 /* AppDelegate.swift */; };
 		B5979C162448740E004A2375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C152448740E004A2375 /* SceneDelegate.swift */; };
-		B5979C182448740E004A2375 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C172448740E004A2375 /* ViewController.swift */; };
+		B5979C182448740E004A2375 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C172448740E004A2375 /* LoginViewController.swift */; };
 		B5979C1B2448740E004A2375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5979C192448740E004A2375 /* Main.storyboard */; };
 		B5979C1E2448740E004A2375 /* InstargramApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5979C1C2448740E004A2375 /* InstargramApp.xcdatamodeld */; };
 		B5979C2024487411004A2375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5979C1F24487411004A2375 /* Assets.xcassets */; };
@@ -36,10 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DD07E83588E5AA4D08EBC43 /* Pods-InstargramApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramApp.release.xcconfig"; path = "Target Support Files/Pods-InstargramApp/Pods-InstargramApp.release.xcconfig"; sourceTree = "<group>"; };
+		3E3889CFF24CAAC2042C1478 /* Pods-InstargramApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramApp.debug.xcconfig"; path = "Target Support Files/Pods-InstargramApp/Pods-InstargramApp.debug.xcconfig"; sourceTree = "<group>"; };
+		532FD3E2500719A5F9C18FA8 /* Pods-InstargramAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramAppTests.debug.xcconfig"; path = "Target Support Files/Pods-InstargramAppTests/Pods-InstargramAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81FD839871A6208C61D56C71 /* Pods-InstargramApp-InstargramAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramApp-InstargramAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-InstargramApp-InstargramAppUITests/Pods-InstargramApp-InstargramAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		873484CFC57822B4CB907160 /* Pods_InstargramAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstargramAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3C3A728D1FEA219C2036DC /* Pods-InstargramAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramAppTests.release.xcconfig"; path = "Target Support Files/Pods-InstargramAppTests/Pods-InstargramAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		98ADB92449CE00133C5EFF4F /* Pods_InstargramApp_InstargramAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstargramApp_InstargramAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5979C102448740E004A2375 /* InstargramApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstargramApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5979C132448740E004A2375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5979C152448740E004A2375 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5979C172448740E004A2375 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5979C172448740E004A2375 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B5979C1A2448740E004A2375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5979C1D2448740E004A2375 /* InstargramApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InstargramApp.xcdatamodel; sourceTree = "<group>"; };
 		B5979C1F24487411004A2375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +61,8 @@
 		B5979C3424487412004A2375 /* InstargramAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstargramAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5979C3824487412004A2375 /* InstargramAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstargramAppUITests.swift; sourceTree = "<group>"; };
 		B5979C3A24487412004A2375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C93E27CEDAE0CB436B5C7FEE /* Pods-InstargramApp-InstargramAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramApp-InstargramAppUITests.release.xcconfig"; path = "Target Support Files/Pods-InstargramApp-InstargramAppUITests/Pods-InstargramApp-InstargramAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DECF19DA0CB9A2C200A872AA /* Pods_InstargramApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstargramApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C56012691953F2324AA8858 /* Pods_InstargramApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B191B6D56D3D5071C63B4112 /* Pods_InstargramAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E2F12C3780935EEF767904 /* Pods_InstargramApp_InstargramAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89DC5BD29F888A3F9BE7C023 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E3889CFF24CAAC2042C1478 /* Pods-InstargramApp.debug.xcconfig */,
+				3DD07E83588E5AA4D08EBC43 /* Pods-InstargramApp.release.xcconfig */,
+				81FD839871A6208C61D56C71 /* Pods-InstargramApp-InstargramAppUITests.debug.xcconfig */,
+				C93E27CEDAE0CB436B5C7FEE /* Pods-InstargramApp-InstargramAppUITests.release.xcconfig */,
+				532FD3E2500719A5F9C18FA8 /* Pods-InstargramAppTests.debug.xcconfig */,
+				8C3C3A728D1FEA219C2036DC /* Pods-InstargramAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B560836E244E17DA0084885D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B560836F244E17F80084885D /* Login */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B560836F244E17F80084885D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		B5979C072448740E004A2375 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +128,8 @@
 				B5979C2C24487412004A2375 /* InstargramAppTests */,
 				B5979C3724487412004A2375 /* InstargramAppUITests */,
 				B5979C112448740E004A2375 /* Products */,
+				89DC5BD29F888A3F9BE7C023 /* Pods */,
+				F74634FB9DF499862D3A9115 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +146,10 @@
 		B5979C122448740E004A2375 /* InstargramApp */ = {
 			isa = PBXGroup;
 			children = (
+				B560836E244E17DA0084885D /* ViewControllers */,
 				B5979C132448740E004A2375 /* AppDelegate.swift */,
 				B5979C152448740E004A2375 /* SceneDelegate.swift */,
-				B5979C172448740E004A2375 /* ViewController.swift */,
+				B5979C172448740E004A2375 /* LoginViewController.swift */,
 				B5979C192448740E004A2375 /* Main.storyboard */,
 				B5979C1F24487411004A2375 /* Assets.xcassets */,
 				B5979C2124487411004A2375 /* LaunchScreen.storyboard */,
@@ -131,6 +177,16 @@
 			path = InstargramAppUITests;
 			sourceTree = "<group>";
 		};
+		F74634FB9DF499862D3A9115 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DECF19DA0CB9A2C200A872AA /* Pods_InstargramApp.framework */,
+				98ADB92449CE00133C5EFF4F /* Pods_InstargramApp_InstargramAppUITests.framework */,
+				873484CFC57822B4CB907160 /* Pods_InstargramAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5979C3D24487412004A2375 /* Build configuration list for PBXNativeTarget "InstargramApp" */;
 			buildPhases = (
+				F56E2954B8CAF30AA1F443DE /* [CP] Check Pods Manifest.lock */,
 				B5979C0C2448740E004A2375 /* Sources */,
 				B5979C0D2448740E004A2375 /* Frameworks */,
 				B5979C0E2448740E004A2375 /* Resources */,
+				EA793381DCE01AEB7DD10EBB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5979C4024487412004A2375 /* Build configuration list for PBXNativeTarget "InstargramAppTests" */;
 			buildPhases = (
+				0A5E7EF7F05557AD8B5B6F8C /* [CP] Check Pods Manifest.lock */,
 				B5979C2524487412004A2375 /* Sources */,
 				B5979C2624487412004A2375 /* Frameworks */,
 				B5979C2724487412004A2375 /* Resources */,
@@ -173,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5979C4324487412004A2375 /* Build configuration list for PBXNativeTarget "InstargramAppUITests" */;
 			buildPhases = (
+				47EDF764E20E6891DC2EFA1C /* [CP] Check Pods Manifest.lock */,
 				B5979C3024487412004A2375 /* Sources */,
 				B5979C3124487412004A2375 /* Frameworks */,
 				B5979C3224487412004A2375 /* Resources */,
+				206FF0CF518790330E44E7B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,12 +318,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A5E7EF7F05557AD8B5B6F8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstargramAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		206FF0CF518790330E44E7B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstargramApp-InstargramAppUITests/Pods-InstargramApp-InstargramAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstargramApp-InstargramAppUITests/Pods-InstargramApp-InstargramAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstargramApp-InstargramAppUITests/Pods-InstargramApp-InstargramAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47EDF764E20E6891DC2EFA1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstargramApp-InstargramAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA793381DCE01AEB7DD10EBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstargramApp/Pods-InstargramApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstargramApp/Pods-InstargramApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstargramApp/Pods-InstargramApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F56E2954B8CAF30AA1F443DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstargramApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5979C0C2448740E004A2375 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5979C182448740E004A2375 /* ViewController.swift in Sources */,
+				B5979C182448740E004A2375 /* LoginViewController.swift in Sources */,
 				B5979C142448740E004A2375 /* AppDelegate.swift in Sources */,
 				B5979C162448740E004A2375 /* SceneDelegate.swift in Sources */,
 				B5979C1E2448740E004A2375 /* InstargramApp.xcdatamodeld in Sources */,
@@ -436,12 +600,13 @@
 		};
 		B5979C3E24487412004A2375 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E3889CFF24CAAC2042C1478 /* Pods-InstargramApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3T88XE4NP;
 				INFOPLIST_FILE = InstargramApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,12 +620,13 @@
 		};
 		B5979C3F24487412004A2375 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD07E83588E5AA4D08EBC43 /* Pods-InstargramApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3T88XE4NP;
 				INFOPLIST_FILE = InstargramApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,6 +640,7 @@
 		};
 		B5979C4124487412004A2375 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 532FD3E2500719A5F9C18FA8 /* Pods-InstargramAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +663,7 @@
 		};
 		B5979C4224487412004A2375 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C3C3A728D1FEA219C2036DC /* Pods-InstargramAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +686,7 @@
 		};
 		B5979C4424487412004A2375 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81FD839871A6208C61D56C71 /* Pods-InstargramApp-InstargramAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +707,7 @@
 		};
 		B5979C4524487412004A2375 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C93E27CEDAE0CB436B5C7FEE /* Pods-InstargramApp-InstargramAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -10,6 +10,7 @@
 		0C56012691953F2324AA8858 /* Pods_InstargramApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECF19DA0CB9A2C200A872AA /* Pods_InstargramApp.framework */; };
 		20E2F12C3780935EEF767904 /* Pods_InstargramApp_InstargramAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ADB92449CE00133C5EFF4F /* Pods_InstargramApp_InstargramAppUITests.framework */; };
 		B191B6D56D3D5071C63B4112 /* Pods_InstargramAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873484CFC57822B4CB907160 /* Pods_InstargramAppTests.framework */; };
+		B537F47A244F0F3B006EFC8E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537F479244F0F3B006EFC8E /* SignUpViewController.swift */; };
 		B5979C142448740E004A2375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C132448740E004A2375 /* AppDelegate.swift */; };
 		B5979C162448740E004A2375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C152448740E004A2375 /* SceneDelegate.swift */; };
 		B5979C182448740E004A2375 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C172448740E004A2375 /* LoginViewController.swift */; };
@@ -46,6 +47,7 @@
 		873484CFC57822B4CB907160 /* Pods_InstargramAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstargramAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3C3A728D1FEA219C2036DC /* Pods-InstargramAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramAppTests.release.xcconfig"; path = "Target Support Files/Pods-InstargramAppTests/Pods-InstargramAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		98ADB92449CE00133C5EFF4F /* Pods_InstargramApp_InstargramAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstargramApp_InstargramAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B537F479244F0F3B006EFC8E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B5979C102448740E004A2375 /* InstargramApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstargramApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5979C132448740E004A2375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5979C152448740E004A2375 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,8 @@
 		B560836F244E17F80084885D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				B5979C172448740E004A2375 /* LoginViewController.swift */,
+				B537F479244F0F3B006EFC8E /* SignUpViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -149,7 +153,6 @@
 				B560836E244E17DA0084885D /* ViewControllers */,
 				B5979C132448740E004A2375 /* AppDelegate.swift */,
 				B5979C152448740E004A2375 /* SceneDelegate.swift */,
-				B5979C172448740E004A2375 /* LoginViewController.swift */,
 				B5979C192448740E004A2375 /* Main.storyboard */,
 				B5979C1F24487411004A2375 /* Assets.xcassets */,
 				B5979C2124487411004A2375 /* LaunchScreen.storyboard */,
@@ -430,6 +433,7 @@
 				B5979C142448740E004A2375 /* AppDelegate.swift in Sources */,
 				B5979C162448740E004A2375 /* SceneDelegate.swift in Sources */,
 				B5979C1E2448740E004A2375 /* InstargramApp.xcdatamodeld in Sources */,
+				B537F47A244F0F3B006EFC8E /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

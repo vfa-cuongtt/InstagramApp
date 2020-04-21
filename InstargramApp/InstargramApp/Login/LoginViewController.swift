@@ -16,5 +16,7 @@ class LoginViewController: UIViewController {
     }
 
 
+    @IBAction func transferSignUpViewActionClick(_ sender: Any) {
+    }
 }
 

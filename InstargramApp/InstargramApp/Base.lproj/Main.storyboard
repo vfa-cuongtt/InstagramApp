@@ -62,15 +62,23 @@
                                     <constraint firstAttribute="trailing" secondItem="QNu-UN-PyK" secondAttribute="trailing" id="zeN-Bk-TNj"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSC-mc-Boe">
+                                <rect key="frame" x="158.5" y="472" width="58" height="30"/>
+                                <state key="normal" title="Sign Up ">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Egr-X9-ZwT" firstAttribute="centerX" secondItem="zjf-O9-91I" secondAttribute="centerX" id="Acv-f8-MbL"/>
                             <constraint firstItem="Egr-X9-ZwT" firstAttribute="top" secondItem="Aup-aJ-Sb6" secondAttribute="top" constant="200" id="C2b-Ns-5fN"/>
+                            <constraint firstItem="PSC-mc-Boe" firstAttribute="top" secondItem="7nh-M2-tDL" secondAttribute="bottom" constant="30" id="EzL-CV-Ai5"/>
                             <constraint firstItem="7nh-M2-tDL" firstAttribute="centerX" secondItem="zjf-O9-91I" secondAttribute="centerX" id="JWq-mP-NEv"/>
                             <constraint firstItem="7nh-M2-tDL" firstAttribute="leading" secondItem="Aup-aJ-Sb6" secondAttribute="leading" constant="10" id="TeX-YO-pHB"/>
                             <constraint firstItem="7nh-M2-tDL" firstAttribute="top" secondItem="Egr-X9-ZwT" secondAttribute="bottom" constant="70" id="lA5-px-PXL"/>
                             <constraint firstItem="Aup-aJ-Sb6" firstAttribute="trailing" secondItem="7nh-M2-tDL" secondAttribute="trailing" constant="10" id="mwm-E6-CUB"/>
+                            <constraint firstItem="PSC-mc-Boe" firstAttribute="centerX" secondItem="zjf-O9-91I" secondAttribute="centerX" id="vAa-vo-LaJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Aup-aJ-Sb6"/>
                     </view>
@@ -78,6 +86,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqg-ZX-jGi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="120" y="169.01408450704224"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MBy-Yk-5CR">
+            <objects>
+                <viewController id="bdm-jn-I7H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iTe-en-Mta">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Instagram Logo" translatesAutoresizingMaskIntoConstraints="NO" id="YpK-sx-LFv">
+                                <rect key="frame" x="87.499999999999986" y="200" width="200.00000000000003" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="H8R-aL-nYD"/>
+                                    <constraint firstAttribute="height" constant="52" id="Xgh-hu-zfC"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XrH-Zi-WLB" userLabel="SignUpView">
+                                <rect key="frame" x="10" y="322" width="355" height="165"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oT9-2y-448">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4BO-xW-OnX">
+                                        <rect key="frame" x="0.0" y="44" width="355" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qy6-au-ntE">
+                                        <rect key="frame" x="0.0" y="132" width="355" height="33"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ZK-UA-Mp4">
+                                        <rect key="frame" x="0.0" y="88" width="355" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="oT9-2y-448" firstAttribute="top" secondItem="XrH-Zi-WLB" secondAttribute="top" id="02f-7D-EoU"/>
+                                    <constraint firstItem="qy6-au-ntE" firstAttribute="centerX" secondItem="XrH-Zi-WLB" secondAttribute="centerX" id="2Gi-hG-gdq"/>
+                                    <constraint firstAttribute="trailing" secondItem="qy6-au-ntE" secondAttribute="trailing" id="3gQ-Sd-IPi"/>
+                                    <constraint firstAttribute="trailing" secondItem="8ZK-UA-Mp4" secondAttribute="trailing" id="8Ke-Ph-TLf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="8yz-bi-MG5"/>
+                                    <constraint firstAttribute="trailing" secondItem="qy6-au-ntE" secondAttribute="trailing" id="9Bl-1i-caW"/>
+                                    <constraint firstAttribute="height" constant="165" id="9kE-gn-eam"/>
+                                    <constraint firstItem="4BO-xW-OnX" firstAttribute="leading" secondItem="XrH-Zi-WLB" secondAttribute="leading" id="A3O-Jw-dnH"/>
+                                    <constraint firstItem="qy6-au-ntE" firstAttribute="leading" secondItem="XrH-Zi-WLB" secondAttribute="leading" id="ACy-yN-H2a"/>
+                                    <constraint firstItem="qy6-au-ntE" firstAttribute="top" secondItem="8ZK-UA-Mp4" secondAttribute="bottom" constant="10" id="FUl-rO-65e"/>
+                                    <constraint firstAttribute="bottom" secondItem="qy6-au-ntE" secondAttribute="bottom" id="ImR-e9-Nll"/>
+                                    <constraint firstAttribute="trailing" secondItem="oT9-2y-448" secondAttribute="trailing" id="JOk-et-eyS"/>
+                                    <constraint firstItem="qy6-au-ntE" firstAttribute="leading" secondItem="XrH-Zi-WLB" secondAttribute="leading" id="NUt-TK-9PO"/>
+                                    <constraint firstItem="8ZK-UA-Mp4" firstAttribute="top" secondItem="4BO-xW-OnX" secondAttribute="bottom" constant="10" id="YrL-nv-a4f"/>
+                                    <constraint firstAttribute="trailing" secondItem="4BO-xW-OnX" secondAttribute="trailing" id="bmC-gb-FlW"/>
+                                    <constraint firstItem="8ZK-UA-Mp4" firstAttribute="leading" secondItem="XrH-Zi-WLB" secondAttribute="leading" id="dQb-Em-Gea"/>
+                                    <constraint firstItem="4BO-xW-OnX" firstAttribute="top" secondItem="oT9-2y-448" secondAttribute="bottom" constant="10" id="dib-r3-yf9"/>
+                                    <constraint firstItem="oT9-2y-448" firstAttribute="leading" secondItem="XrH-Zi-WLB" secondAttribute="leading" id="h4m-dn-2g2"/>
+                                    <constraint firstItem="oT9-2y-448" firstAttribute="centerX" secondItem="XrH-Zi-WLB" secondAttribute="centerX" id="heL-ad-AuX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XrH-Zi-WLB" firstAttribute="top" secondItem="YpK-sx-LFv" secondAttribute="bottom" constant="70" id="71E-Er-FvN"/>
+                            <constraint firstItem="YpK-sx-LFv" firstAttribute="centerX" secondItem="iTe-en-Mta" secondAttribute="centerX" id="aRT-6D-Ayw"/>
+                            <constraint firstItem="XrH-Zi-WLB" firstAttribute="centerX" secondItem="iTe-en-Mta" secondAttribute="centerX" id="ahD-iD-mmB"/>
+                            <constraint firstItem="8gi-3G-FdO" firstAttribute="trailing" secondItem="XrH-Zi-WLB" secondAttribute="trailing" constant="10" id="gSv-AF-PsF"/>
+                            <constraint firstItem="YpK-sx-LFv" firstAttribute="top" secondItem="8gi-3G-FdO" secondAttribute="top" constant="200" id="sPf-r8-oVF"/>
+                            <constraint firstItem="XrH-Zi-WLB" firstAttribute="leading" secondItem="8gi-3G-FdO" secondAttribute="leading" constant="10" id="uZc-f6-udt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8gi-3G-FdO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ybe-n4-xGH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="169"/>
         </scene>
     </scenes>
     <resources>

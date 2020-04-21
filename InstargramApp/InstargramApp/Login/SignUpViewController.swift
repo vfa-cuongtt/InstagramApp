@@ -10,10 +10,11 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var avatarImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        avatarImage.layer.cornerRadius = avatarImage.frame.size.width / 2
     }
     
     @IBAction func backLoginViewActionClick(_ sender: Any) {

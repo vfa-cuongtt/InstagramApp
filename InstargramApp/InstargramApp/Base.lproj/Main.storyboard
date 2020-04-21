@@ -180,6 +180,9 @@
                         <viewLayoutGuide key="safeArea" id="8gi-3G-FdO"/>
                     </view>
                     <navigationItem key="navigationItem" id="3Y5-4r-Hrp"/>
+                    <connections>
+                        <outlet property="avatarImage" destination="YpK-sx-LFv" id="X3L-Pg-R7U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ybe-n4-xGH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

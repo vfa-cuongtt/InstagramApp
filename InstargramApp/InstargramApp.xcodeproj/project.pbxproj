@@ -10,6 +10,11 @@
 		0C56012691953F2324AA8858 /* Pods_InstargramApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECF19DA0CB9A2C200A872AA /* Pods_InstargramApp.framework */; };
 		20E2F12C3780935EEF767904 /* Pods_InstargramApp_InstargramAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ADB92449CE00133C5EFF4F /* Pods_InstargramApp_InstargramAppUITests.framework */; };
 		B191B6D56D3D5071C63B4112 /* Pods_InstargramAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873484CFC57822B4CB907160 /* Pods_InstargramAppTests.framework */; };
+		B530D2F724548E9E005F1EE9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2F624548E9E005F1EE9 /* HomeViewController.swift */; };
+		B530D2F924548EBB005F1EE9 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2F824548EBB005F1EE9 /* DiscoverViewController.swift */; };
+		B530D2FE24548F0B005F1EE9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2FD24548F0B005F1EE9 /* CameraViewController.swift */; };
+		B530D30024548F1D005F1EE9 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2FF24548F1D005F1EE9 /* ActivityViewController.swift */; };
+		B530D30224548F2D005F1EE9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D30124548F2D005F1EE9 /* ProfileViewController.swift */; };
 		B537F47A244F0F3B006EFC8E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537F479244F0F3B006EFC8E /* SignUpViewController.swift */; };
 		B5979C142448740E004A2375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C132448740E004A2375 /* AppDelegate.swift */; };
 		B5979C162448740E004A2375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C152448740E004A2375 /* SceneDelegate.swift */; };
@@ -47,6 +52,11 @@
 		873484CFC57822B4CB907160 /* Pods_InstargramAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstargramAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3C3A728D1FEA219C2036DC /* Pods-InstargramAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramAppTests.release.xcconfig"; path = "Target Support Files/Pods-InstargramAppTests/Pods-InstargramAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		98ADB92449CE00133C5EFF4F /* Pods_InstargramApp_InstargramAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstargramApp_InstargramAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B530D2F624548E9E005F1EE9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B530D2F824548EBB005F1EE9 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		B530D2FD24548F0B005F1EE9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		B530D2FF24548F1D005F1EE9 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		B530D30124548F2D005F1EE9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B537F479244F0F3B006EFC8E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B5979C102448740E004A2375 /* InstargramApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstargramApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5979C132448740E004A2375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,9 +118,54 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B530D2F424548E40005F1EE9 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B530D2F824548EBB005F1EE9 /* DiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		B530D2F524548E76005F1EE9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B530D2F624548E9E005F1EE9 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B530D2FA24548EE5005F1EE9 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B530D2FD24548F0B005F1EE9 /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		B530D2FB24548EEF005F1EE9 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				B530D2FF24548F1D005F1EE9 /* ActivityViewController.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		B530D2FC24548EF8005F1EE9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B530D30124548F2D005F1EE9 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		B560836E244E17DA0084885D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B530D2FC24548EF8005F1EE9 /* Profile */,
+				B530D2FB24548EEF005F1EE9 /* Activity */,
+				B530D2FA24548EE5005F1EE9 /* Camera */,
+				B530D2F524548E76005F1EE9 /* Home */,
+				B530D2F424548E40005F1EE9 /* Discover */,
 				B560836F244E17F80084885D /* Login */,
 			);
 			name = ViewControllers;
@@ -431,9 +486,14 @@
 			files = (
 				B5979C182448740E004A2375 /* LoginViewController.swift in Sources */,
 				B5979C142448740E004A2375 /* AppDelegate.swift in Sources */,
+				B530D30224548F2D005F1EE9 /* ProfileViewController.swift in Sources */,
+				B530D2F924548EBB005F1EE9 /* DiscoverViewController.swift in Sources */,
 				B5979C162448740E004A2375 /* SceneDelegate.swift in Sources */,
+				B530D30024548F1D005F1EE9 /* ActivityViewController.swift in Sources */,
 				B5979C1E2448740E004A2375 /* InstargramApp.xcdatamodeld in Sources */,
+				B530D2FE24548F0B005F1EE9 /* CameraViewController.swift in Sources */,
 				B537F47A244F0F3B006EFC8E /* SignUpViewController.swift in Sources */,
+				B530D2F724548E9E005F1EE9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

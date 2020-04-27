@@ -15,11 +15,11 @@
 		B530D2FE24548F0B005F1EE9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2FD24548F0B005F1EE9 /* CameraViewController.swift */; };
 		B530D30024548F1D005F1EE9 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2FF24548F1D005F1EE9 /* ActivityViewController.swift */; };
 		B530D30224548F2D005F1EE9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D30124548F2D005F1EE9 /* ProfileViewController.swift */; };
+		B530D3092454B82E005F1EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5979C192448740E004A2375 /* Main.storyboard */; };
 		B537F47A244F0F3B006EFC8E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537F479244F0F3B006EFC8E /* SignUpViewController.swift */; };
 		B5979C142448740E004A2375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C132448740E004A2375 /* AppDelegate.swift */; };
 		B5979C162448740E004A2375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C152448740E004A2375 /* SceneDelegate.swift */; };
 		B5979C182448740E004A2375 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C172448740E004A2375 /* LoginViewController.swift */; };
-		B5979C1B2448740E004A2375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5979C192448740E004A2375 /* Main.storyboard */; };
 		B5979C1E2448740E004A2375 /* InstargramApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5979C1C2448740E004A2375 /* InstargramApp.xcdatamodeld */; };
 		B5979C2024487411004A2375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5979C1F24487411004A2375 /* Assets.xcassets */; };
 		B5979C2324487411004A2375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5979C2124487411004A2375 /* LaunchScreen.storyboard */; };
@@ -57,6 +57,7 @@
 		B530D2FD24548F0B005F1EE9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		B530D2FF24548F1D005F1EE9 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		B530D30124548F2D005F1EE9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B530D3062454AF40005F1EE9 /* MainHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MainHome.storyboard; path = /Users/vfa/Documents/GitSource/InstagramApp/InstargramApp/InstargramApp/MainHome.storyboard; sourceTree = "<absolute>"; };
 		B537F479244F0F3B006EFC8E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B5979C102448740E004A2375 /* InstargramApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstargramApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5979C132448740E004A2375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +210,7 @@
 				B5979C132448740E004A2375 /* AppDelegate.swift */,
 				B5979C152448740E004A2375 /* SceneDelegate.swift */,
 				B5979C192448740E004A2375 /* Main.storyboard */,
+				B530D3062454AF40005F1EE9 /* MainHome.storyboard */,
 				B5979C1F24487411004A2375 /* Assets.xcassets */,
 				B5979C2124487411004A2375 /* LaunchScreen.storyboard */,
 				B5979C2424487411004A2375 /* Info.plist */,
@@ -354,9 +356,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B530D3092454B82E005F1EE9 /* Main.storyboard in Resources */,
 				B5979C2324487411004A2375 /* LaunchScreen.storyboard in Resources */,
 				B5979C2024487411004A2375 /* Assets.xcassets in Resources */,
-				B5979C1B2448740E004A2375 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

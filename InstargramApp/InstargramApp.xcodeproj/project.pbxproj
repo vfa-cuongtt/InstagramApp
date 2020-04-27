@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		0C56012691953F2324AA8858 /* Pods_InstargramApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECF19DA0CB9A2C200A872AA /* Pods_InstargramApp.framework */; };
 		20E2F12C3780935EEF767904 /* Pods_InstargramApp_InstargramAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ADB92449CE00133C5EFF4F /* Pods_InstargramApp_InstargramAppUITests.framework */; };
+		4896B74A245676F20025CDD7 /* MainHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4896B748245676F20025CDD7 /* MainHome.storyboard */; };
+		4896B74B245676F20025CDD7 /* MainHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4896B748245676F20025CDD7 /* MainHome.storyboard */; };
+		4896B74C245676F20025CDD7 /* MainHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4896B748245676F20025CDD7 /* MainHome.storyboard */; };
 		B191B6D56D3D5071C63B4112 /* Pods_InstargramAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873484CFC57822B4CB907160 /* Pods_InstargramAppTests.framework */; };
 		B530D2F724548E9E005F1EE9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2F624548E9E005F1EE9 /* HomeViewController.swift */; };
 		B530D2F924548EBB005F1EE9 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2F824548EBB005F1EE9 /* DiscoverViewController.swift */; };
 		B530D2FE24548F0B005F1EE9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2FD24548F0B005F1EE9 /* CameraViewController.swift */; };
 		B530D30024548F1D005F1EE9 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2FF24548F1D005F1EE9 /* ActivityViewController.swift */; };
 		B530D30224548F2D005F1EE9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D30124548F2D005F1EE9 /* ProfileViewController.swift */; };
-		B530D3092454B82E005F1EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5979C192448740E004A2375 /* Main.storyboard */; };
 		B537F47A244F0F3B006EFC8E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537F479244F0F3B006EFC8E /* SignUpViewController.swift */; };
 		B5979C142448740E004A2375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C132448740E004A2375 /* AppDelegate.swift */; };
 		B5979C162448740E004A2375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C152448740E004A2375 /* SceneDelegate.swift */; };
@@ -47,6 +49,7 @@
 /* Begin PBXFileReference section */
 		3DD07E83588E5AA4D08EBC43 /* Pods-InstargramApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramApp.release.xcconfig"; path = "Target Support Files/Pods-InstargramApp/Pods-InstargramApp.release.xcconfig"; sourceTree = "<group>"; };
 		3E3889CFF24CAAC2042C1478 /* Pods-InstargramApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramApp.debug.xcconfig"; path = "Target Support Files/Pods-InstargramApp/Pods-InstargramApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4896B749245676F20025CDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainHome.storyboard; sourceTree = "<group>"; };
 		532FD3E2500719A5F9C18FA8 /* Pods-InstargramAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramAppTests.debug.xcconfig"; path = "Target Support Files/Pods-InstargramAppTests/Pods-InstargramAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81FD839871A6208C61D56C71 /* Pods-InstargramApp-InstargramAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramApp-InstargramAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-InstargramApp-InstargramAppUITests/Pods-InstargramApp-InstargramAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		873484CFC57822B4CB907160 /* Pods_InstargramAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstargramAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,13 +60,11 @@
 		B530D2FD24548F0B005F1EE9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		B530D2FF24548F1D005F1EE9 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		B530D30124548F2D005F1EE9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		B530D3062454AF40005F1EE9 /* MainHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MainHome.storyboard; path = /Users/vfa/Documents/GitSource/InstagramApp/InstargramApp/InstargramApp/MainHome.storyboard; sourceTree = "<absolute>"; };
 		B537F479244F0F3B006EFC8E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B5979C102448740E004A2375 /* InstargramApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstargramApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5979C132448740E004A2375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5979C152448740E004A2375 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B5979C172448740E004A2375 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B5979C1A2448740E004A2375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5979C1D2448740E004A2375 /* InstargramApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InstargramApp.xcdatamodel; sourceTree = "<group>"; };
 		B5979C1F24487411004A2375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5979C2224487411004A2375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -209,8 +210,7 @@
 				B560836E244E17DA0084885D /* ViewControllers */,
 				B5979C132448740E004A2375 /* AppDelegate.swift */,
 				B5979C152448740E004A2375 /* SceneDelegate.swift */,
-				B5979C192448740E004A2375 /* Main.storyboard */,
-				B530D3062454AF40005F1EE9 /* MainHome.storyboard */,
+				4896B748245676F20025CDD7 /* MainHome.storyboard */,
 				B5979C1F24487411004A2375 /* Assets.xcassets */,
 				B5979C2124487411004A2375 /* LaunchScreen.storyboard */,
 				B5979C2424487411004A2375 /* Info.plist */,
@@ -356,7 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B530D3092454B82E005F1EE9 /* Main.storyboard in Resources */,
+				4896B74A245676F20025CDD7 /* MainHome.storyboard in Resources */,
 				B5979C2324487411004A2375 /* LaunchScreen.storyboard in Resources */,
 				B5979C2024487411004A2375 /* Assets.xcassets in Resources */,
 			);
@@ -366,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4896B74B245676F20025CDD7 /* MainHome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4896B74C245676F20025CDD7 /* MainHome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,12 +533,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B5979C192448740E004A2375 /* Main.storyboard */ = {
+		4896B748245676F20025CDD7 /* MainHome.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B5979C1A2448740E004A2375 /* Base */,
+				4896B749245676F20025CDD7 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainHome.storyboard;
 			sourceTree = "<group>";
 		};
 		B5979C2124487411004A2375 /* LaunchScreen.storyboard */ = {

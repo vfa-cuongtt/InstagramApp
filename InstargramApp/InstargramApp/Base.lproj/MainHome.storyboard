@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Instagram Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Egr-X9-ZwT">
-                                <rect key="frame" x="87.499999999999986" y="200" width="200.00000000000003" height="52"/>
+                                <rect key="frame" x="87.5" y="200" width="200" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="DNu-Pc-38d"/>
                                     <constraint firstAttribute="width" constant="200" id="pUC-c9-n3N"/>
@@ -106,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XrH-Zi-WLB" userLabel="SignUpView">
-                                <rect key="frame" x="10" y="322" width="355" height="165"/>
+                                <rect key="frame" x="10" y="429" width="355" height="165"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oT9-2y-448">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="34"/>
@@ -168,7 +168,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder Images" translatesAutoresizingMaskIntoConstraints="NO" id="YpK-sx-LFv">
-                                <rect key="frame" x="133.5" y="145" width="108" height="107.00000000000003"/>
+                                <rect key="frame" x="79.5" y="145" width="216" height="214"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>

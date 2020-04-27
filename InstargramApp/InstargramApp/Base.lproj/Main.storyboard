@@ -208,6 +208,6 @@
         <image name="Placeholder Images" width="108" height="107"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SRI-LM-WTE"/>
+        <segue reference="aka-TN-w5S"/>
     </inferredMetricsTieBreakers>
 </document>

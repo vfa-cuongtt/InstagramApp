@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
         
         // change color
         view.backgroundColor = UIColor.blue
+        print("Home View")
     }
     
 

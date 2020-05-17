@@ -13,12 +13,15 @@
 		4896B74B245676F20025CDD7 /* MainHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4896B748245676F20025CDD7 /* MainHome.storyboard */; };
 		4896B74C245676F20025CDD7 /* MainHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4896B748245676F20025CDD7 /* MainHome.storyboard */; };
 		B191B6D56D3D5071C63B4112 /* Pods_InstargramAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873484CFC57822B4CB907160 /* Pods_InstargramAppTests.framework */; };
+		B502A38524609463005FC1C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B502A38424609463005FC1C5 /* GoogleService-Info.plist */; };
 		B530D2F724548E9E005F1EE9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2F624548E9E005F1EE9 /* HomeViewController.swift */; };
 		B530D2F924548EBB005F1EE9 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2F824548EBB005F1EE9 /* DiscoverViewController.swift */; };
 		B530D2FE24548F0B005F1EE9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2FD24548F0B005F1EE9 /* CameraViewController.swift */; };
 		B530D30024548F1D005F1EE9 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D2FF24548F1D005F1EE9 /* ActivityViewController.swift */; };
 		B530D30224548F2D005F1EE9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530D30124548F2D005F1EE9 /* ProfileViewController.swift */; };
 		B537F47A244F0F3B006EFC8E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537F479244F0F3B006EFC8E /* SignUpViewController.swift */; };
+		B53E70002471363200ABB5E5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6FFF2471363200ABB5E5 /* Utilities.swift */; };
+		B541F0CB247171340069A040 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B541F0CA247171340069A040 /* Constants.swift */; };
 		B5979C142448740E004A2375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C132448740E004A2375 /* AppDelegate.swift */; };
 		B5979C162448740E004A2375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C152448740E004A2375 /* SceneDelegate.swift */; };
 		B5979C182448740E004A2375 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C172448740E004A2375 /* LoginViewController.swift */; };
@@ -55,12 +58,15 @@
 		873484CFC57822B4CB907160 /* Pods_InstargramAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstargramAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3C3A728D1FEA219C2036DC /* Pods-InstargramAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramAppTests.release.xcconfig"; path = "Target Support Files/Pods-InstargramAppTests/Pods-InstargramAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		98ADB92449CE00133C5EFF4F /* Pods_InstargramApp_InstargramAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstargramApp_InstargramAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B502A38424609463005FC1C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B530D2F624548E9E005F1EE9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B530D2F824548EBB005F1EE9 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		B530D2FD24548F0B005F1EE9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		B530D2FF24548F1D005F1EE9 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		B530D30124548F2D005F1EE9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B537F479244F0F3B006EFC8E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B53E6FFF2471363200ABB5E5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B541F0CA247171340069A040 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5979C102448740E004A2375 /* InstargramApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstargramApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5979C132448740E004A2375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5979C152448740E004A2375 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +166,15 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		B53E6FFE247135EE00ABB5E5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B53E6FFF2471363200ABB5E5 /* Utilities.swift */,
+				B541F0CA247171340069A040 /* Constants.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		B560836E244E17DA0084885D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +222,8 @@
 		B5979C122448740E004A2375 /* InstargramApp */ = {
 			isa = PBXGroup;
 			children = (
+				B53E6FFE247135EE00ABB5E5 /* Helpers */,
+				B502A38424609463005FC1C5 /* GoogleService-Info.plist */,
 				B560836E244E17DA0084885D /* ViewControllers */,
 				B5979C132448740E004A2375 /* AppDelegate.swift */,
 				B5979C152448740E004A2375 /* SceneDelegate.swift */,
@@ -357,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4896B74A245676F20025CDD7 /* MainHome.storyboard in Resources */,
+				B502A38524609463005FC1C5 /* GoogleService-Info.plist in Resources */,
 				B5979C2324487411004A2375 /* LaunchScreen.storyboard in Resources */,
 				B5979C2024487411004A2375 /* Assets.xcassets in Resources */,
 			);
@@ -492,12 +510,14 @@
 				B5979C142448740E004A2375 /* AppDelegate.swift in Sources */,
 				B530D30224548F2D005F1EE9 /* ProfileViewController.swift in Sources */,
 				B530D2F924548EBB005F1EE9 /* DiscoverViewController.swift in Sources */,
+				B53E70002471363200ABB5E5 /* Utilities.swift in Sources */,
 				B5979C162448740E004A2375 /* SceneDelegate.swift in Sources */,
 				B530D30024548F1D005F1EE9 /* ActivityViewController.swift in Sources */,
 				B5979C1E2448740E004A2375 /* InstargramApp.xcdatamodeld in Sources */,
 				B530D2FE24548F0B005F1EE9 /* CameraViewController.swift in Sources */,
 				B537F47A244F0F3B006EFC8E /* SignUpViewController.swift in Sources */,
 				B530D2F724548E9E005F1EE9 /* HomeViewController.swift in Sources */,
+				B541F0CB247171340069A040 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseFirestore
+import FirebaseStorage
 
 class SignUpViewController: UIViewController {
 
@@ -17,12 +18,29 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
-//    var ref: DatabaseReference
+    
+    var selectedImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+//        avatarImage.layer.borderWidth = 1.0
+//        avatarImage.layer.masksToBounds = true
         avatarImage.layer.cornerRadius = avatarImage.frame.size.width / 2
+        avatarImage.clipsToBounds = true
+        
+        // Choose image for profile image
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.handleSelectProfileImageView))
+        avatarImage.addGestureRecognizer(tapGesture)
+        avatarImage.isUserInteractionEnabled = true
+    }
+    
+    
+    @objc func handleSelectProfileImageView() {
+        // Select photo from libary
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        present(pickerController, animated: true, completion: nil)
     }
     
     @IBAction func backLoginViewActionClick(_ sender: Any) {
@@ -64,7 +82,7 @@ class SignUpViewController: UIViewController {
             let email = txtEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = txtPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
-            
+            // Create User
             Auth.auth().createUser(withEmail: email, password: password) { (result , err ) in
                 // Check the error
                 if err != nil {
@@ -72,12 +90,32 @@ class SignUpViewController: UIViewController {
                     return
                 } else {
                     // User was created successed
+                    let uid = result?.user.uid
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data: ["username": username, "email": email, "uid": result?.user.uid]) { (error) in
-                        if error != nil {
-                            self.showError("Error saving user")
+                    
+                    
+                    let storage = Storage.storage()
+                    // Create a root reference
+                    let storageRef = storage.reference(forURL: Constants.Storage.urlStorage).child("profile_image").child(uid!)
+                    if let profileImg = self.selectedImage, let imageData = profileImg.jpegData(compressionQuality: 0.1) {
+                        storageRef.putData(imageData, metadata: nil) { (metadata, error) in
+                            if error != nil {
+                                print("Upload faill")
+                                return
+                            }
+                            
+                            let profileImageUrl = metadata?.path
+                            print("profile Img URL \(profileImageUrl)")
+                            
+                            db.collection("users").addDocument(data: ["username": username, "email": email, "uid": uid, "profileImageUrl": profileImageUrl1 a]) { (error) in
+                                if error != nil {
+                                    self.showError("Error saving user")
+                                }
+                            }
                         }
                     }
+                    
+                    
                     // Transition to the Home screen
                     self.transitionToHome()
                 }
@@ -89,7 +127,6 @@ class SignUpViewController: UIViewController {
     
     func transitionToHome() {
         let homeVC = storyboard?.instantiateViewController(identifier: Constants.Stroryboard.homeViewController) as? HomeViewController
-//        let homeVC = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeViewController
         
         print("Transition \(homeVC)")
         view.window?.rootViewController = homeVC
@@ -97,4 +134,19 @@ class SignUpViewController: UIViewController {
     }
     
 
+}
+
+extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        print("imga picker")
+        
+        if let image = info[.originalImage] as? UIImage {
+            selectedImage = image
+            avatarImage.image = image
+
+
+        }
+        print(info)
+        dismiss(animated: true, completion: nil)
+    }
 }

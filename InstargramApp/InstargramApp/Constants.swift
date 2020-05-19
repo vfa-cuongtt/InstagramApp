@@ -12,4 +12,8 @@ struct Constants {
     struct Stroryboard {
        static let homeViewController = "HomeVC"
     }
+    
+    struct Storage {
+        static let urlStorage = "gs://ios-instargram-clone.appspot.com"
+    }
 }

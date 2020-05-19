@@ -30,6 +30,10 @@
 		B5979C2324487411004A2375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5979C2124487411004A2375 /* LaunchScreen.storyboard */; };
 		B5979C2E24487412004A2375 /* InstargramAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C2D24487412004A2375 /* InstargramAppTests.swift */; };
 		B5979C3924487412004A2375 /* InstargramAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979C3824487412004A2375 /* InstargramAppUITests.swift */; };
+		B5E0030E2472961A002C1CF8 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0030C2472961A002C1CF8 /* TestViewController.swift */; };
+		B5E0030F2472961A002C1CF8 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E0030D2472961A002C1CF8 /* TestViewController.xib */; };
+		B5E0031324729782002C1CF8 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0031124729782002C1CF8 /* TestCell.swift */; };
+		B5E0031424729782002C1CF8 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E0031224729782002C1CF8 /* TestCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,10 @@
 		B5979C3424487412004A2375 /* InstargramAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstargramAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5979C3824487412004A2375 /* InstargramAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstargramAppUITests.swift; sourceTree = "<group>"; };
 		B5979C3A24487412004A2375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E0030C2472961A002C1CF8 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		B5E0030D2472961A002C1CF8 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		B5E0031124729782002C1CF8 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		B5E0031224729782002C1CF8 /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
 		C93E27CEDAE0CB436B5C7FEE /* Pods-InstargramApp-InstargramAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstargramApp-InstargramAppUITests.release.xcconfig"; path = "Target Support Files/Pods-InstargramApp-InstargramAppUITests/Pods-InstargramApp-InstargramAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DECF19DA0CB9A2C200A872AA /* Pods_InstargramApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstargramApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -222,6 +230,7 @@
 		B5979C122448740E004A2375 /* InstargramApp */ = {
 			isa = PBXGroup;
 			children = (
+				B5E0030B247295FD002C1CF8 /* Test */,
 				B53E6FFE247135EE00ABB5E5 /* Helpers */,
 				B502A38424609463005FC1C5 /* GoogleService-Info.plist */,
 				B560836E244E17DA0084885D /* ViewControllers */,
@@ -252,6 +261,25 @@
 				B5979C3A24487412004A2375 /* Info.plist */,
 			);
 			path = InstargramAppUITests;
+			sourceTree = "<group>";
+		};
+		B5E0030B247295FD002C1CF8 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B5E0031024729765002C1CF8 /* Cell */,
+				B5E0030C2472961A002C1CF8 /* TestViewController.swift */,
+				B5E0030D2472961A002C1CF8 /* TestViewController.xib */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		B5E0031024729765002C1CF8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B5E0031124729782002C1CF8 /* TestCell.swift */,
+				B5E0031224729782002C1CF8 /* TestCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		F74634FB9DF499862D3A9115 /* Frameworks */ = {
@@ -374,9 +402,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4896B74A245676F20025CDD7 /* MainHome.storyboard in Resources */,
+				B5E0030F2472961A002C1CF8 /* TestViewController.xib in Resources */,
 				B502A38524609463005FC1C5 /* GoogleService-Info.plist in Resources */,
 				B5979C2324487411004A2375 /* LaunchScreen.storyboard in Resources */,
 				B5979C2024487411004A2375 /* Assets.xcassets in Resources */,
+				B5E0031424729782002C1CF8 /* TestCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +541,9 @@
 				B530D30224548F2D005F1EE9 /* ProfileViewController.swift in Sources */,
 				B530D2F924548EBB005F1EE9 /* DiscoverViewController.swift in Sources */,
 				B53E70002471363200ABB5E5 /* Utilities.swift in Sources */,
+				B5E0030E2472961A002C1CF8 /* TestViewController.swift in Sources */,
 				B5979C162448740E004A2375 /* SceneDelegate.swift in Sources */,
+				B5E0031324729782002C1CF8 /* TestCell.swift in Sources */,
 				B530D30024548F1D005F1EE9 /* ActivityViewController.swift in Sources */,
 				B5979C1E2448740E004A2375 /* InstargramApp.xcdatamodeld in Sources */,
 				B530D2FE24548F0B005F1EE9 /* CameraViewController.swift in Sources */,

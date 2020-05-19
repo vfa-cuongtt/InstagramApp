@@ -14,6 +14,7 @@ target 'InstargramApp' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Storage'
 
   # Pods for InstargramApp
 

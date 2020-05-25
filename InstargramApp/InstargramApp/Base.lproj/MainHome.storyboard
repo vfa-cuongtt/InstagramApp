@@ -33,14 +33,14 @@
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eD-mA-oPk">
                                         <rect key="frame" x="0.0" y="40" width="355" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNu-UN-PyK">
                                         <rect key="frame" x="0.0" y="80" width="355" height="30"/>
                                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Sign In">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <color key="titleColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="signInActionClick:" destination="rnr-SI-b1f" eventType="touchUpInside" id="a1s-om-U2t"/>
@@ -53,7 +53,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="backgroundColor" red="0.0" green="0.75468409059999997" blue="0.75592523810000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="jik-Da-n2J" secondAttribute="trailing" id="27g-7a-QJC"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="4Hz-bX-nFM"/>
@@ -105,6 +105,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="DDd-gY-fU6"/>
                     <connections>
+                        <outlet property="btnSignIn" destination="QNu-UN-PyK" id="Q0S-pd-xsG"/>
                         <outlet property="errorLabel" destination="d2w-Bi-adQ" id="i3t-b6-tAr"/>
                         <outlet property="txtEmail" destination="jik-Da-n2J" id="e1x-B3-EGN"/>
                         <outlet property="txtPassword" destination="4eD-mA-oPk" id="D9Z-9I-gE2"/>
@@ -140,7 +141,7 @@
                                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Sign Up">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.6034621147260274" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="signUpActionClick:" destination="bdm-jn-I7H" eventType="touchUpInside" id="HHP-Lz-8cC"/>
@@ -149,7 +150,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ZK-UA-Mp4">
                                         <rect key="frame" x="0.0" y="80" width="355" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-OW-NpJ">
                                         <rect key="frame" x="0.0" y="160" width="355" height="30"/>
@@ -158,7 +159,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="backgroundColor" red="0.0" green="0.78333884480000004" blue="0.78838968279999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="oT9-2y-448" firstAttribute="top" secondItem="XrH-Zi-WLB" secondAttribute="top" id="02f-7D-EoU"/>
                                     <constraint firstItem="qy6-au-ntE" firstAttribute="centerX" secondItem="XrH-Zi-WLB" secondAttribute="centerX" id="2Gi-hG-gdq"/>
@@ -223,6 +224,7 @@
                     <navigationItem key="navigationItem" id="3Y5-4r-Hrp"/>
                     <connections>
                         <outlet property="avatarImage" destination="YpK-sx-LFv" id="X3L-Pg-R7U"/>
+                        <outlet property="btnSignUp" destination="qy6-au-ntE" id="FUO-YL-ldS"/>
                         <outlet property="errorLabel" destination="gwR-OW-NpJ" id="0Ng-31-aoA"/>
                         <outlet property="txtEmail" destination="4BO-xW-OnX" id="4PZ-21-eOU"/>
                         <outlet property="txtPassword" destination="8ZK-UA-Mp4" id="MxK-na-8CK"/>

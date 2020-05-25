@@ -19,6 +19,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var btnSignUp: UIButton!
     var selectedImage: UIImage?
     
     override func viewDidLoad() {
@@ -28,13 +29,37 @@ class SignUpViewController: UIViewController {
 //        avatarImage.layer.masksToBounds = true
         avatarImage.layer.cornerRadius = avatarImage.frame.size.width / 2
         avatarImage.clipsToBounds = true
+        btnSignUp.isEnabled = false
         
         // Choose image for profile image
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.handleSelectProfileImageView))
         avatarImage.addGestureRecognizer(tapGesture)
         avatarImage.isUserInteractionEnabled = true
+        
+        handleTextField()
     }
     
+    func handleTextField() {
+        txtUsername.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: .editingChanged)
+        txtEmail.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: .editingChanged)
+        txtPassword.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: .editingChanged)
+
+    }
+    
+    @objc func textFieldDidChange() {
+        guard let username = txtUsername.text, !username.isEmpty,
+            let email = txtEmail.text, !email.isEmpty,
+            let password = txtPassword.text, !password.isEmpty
+        else {
+            btnSignUp.setTitleColor(.lightText, for: .normal)
+            btnSignUp.isEnabled = false
+            return
+        }
+        
+        btnSignUp.setTitleColor(.white, for: .normal)
+        btnSignUp.isEnabled = true
+        
+    }
     
     @objc func handleSelectProfileImageView() {
         // Select photo from libary
@@ -91,7 +116,7 @@ class SignUpViewController: UIViewController {
                 } else {
                     // User was created successed
                     let uid = result?.user.uid
-                    let db = Firestore.firestore()
+                    
                     
                     
                     let storage = Storage.storage()
@@ -105,13 +130,7 @@ class SignUpViewController: UIViewController {
                             }
                             
                             let profileImageUrl = metadata?.path
-                            print("profile Img URL \(profileImageUrl)")
-                            
-                            db.collection("users").addDocument(data: ["username": username, "email": email, "uid": uid, "profileImageUrl": profileImageUrl1 a]) { (error) in
-                                if error != nil {
-                                    self.showError("Error saving user")
-                                }
-                            }
+                            self.setUserInformation(profileImageUrl: profileImageUrl!, username: username, email: email, uid: uid!)
                         }
                     }
                     
@@ -123,6 +142,16 @@ class SignUpViewController: UIViewController {
         
         }
         
+    }
+    
+    func setUserInformation(profileImageUrl: String, username: String, email: String, uid: String) {
+        let db = Firestore.firestore()
+        print("profile Img URL \(profileImageUrl)")
+        db.collection("users").addDocument(data: ["username": username, "email": email, "uid": uid, "profileImageUrl": profileImageUrl]) { (error) in
+           if error != nil {
+               self.showError("Error saving user")
+           }
+       }
     }
     
     func transitionToHome() {

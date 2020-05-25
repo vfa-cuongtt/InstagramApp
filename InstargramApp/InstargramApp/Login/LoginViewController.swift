@@ -14,11 +14,28 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var btnSignIn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        btnSignIn.isEnabled = false
+        handleTextField()
+    }
+    
+    func handleTextField(){
+        txtEmail.addTarget(self, action: #selector(LoginViewController.textFieldDidChange), for: .editingChanged)
     }
 
+    @objc func textFieldDidChange() {
+        guard let email = txtEmail.text, !email.isEmpty, let password = txtPassword.text, !password.isEmpty else {
+            btnSignIn.setTitleColor(.white, for: .normal)
+            btnSignIn.isEnabled = false
+            return
+        }
+        
+        btnSignIn.setTitleColor(.white, for: .normal)
+        btnSignIn.isEnabled = true
+        
+    }
 
     @IBAction func transferSignUpViewActionClick(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpViewController

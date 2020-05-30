@@ -40,6 +40,7 @@ class LoginViewController: UIViewController {
 
     }
 
+
     @objc func textFieldDidChange() {
         
         guard let email = txtEmail.text, !email.isEmpty, let password = txtPassword.text, !password.isEmpty else {
@@ -53,14 +54,15 @@ class LoginViewController: UIViewController {
         
     }
 
+    //MARK:- Other method
+
     @IBAction func transferSignUpViewActionClick(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpViewController
         present(vc, animated: true, completion: nil)
     }
     
     @IBAction func signInActionClick(_ sender: Any) {
-        // Validate text field
-       
+        //TODO: Check valida email ???
         
         // Create cleaned version of the text field
         let email = txtEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -77,9 +79,9 @@ class LoginViewController: UIViewController {
                 self.transitionToHome()
             }
         }
-        
     }
     
+    //MARK:- Other method
     func transitionToHome() {
         let homeVC = storyboard?.instantiateViewController(identifier: Constants.Stroryboard.homeViewController) as? HomeViewController
         

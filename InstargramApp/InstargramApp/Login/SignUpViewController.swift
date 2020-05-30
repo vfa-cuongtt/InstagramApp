@@ -60,6 +60,7 @@ class SignUpViewController: UIViewController {
         btnSignUp.isEnabled = true
         
     }
+
     
     @objc func handleSelectProfileImageView() {
         // Select photo from libary
@@ -70,28 +71,6 @@ class SignUpViewController: UIViewController {
     
     @IBAction func backLoginViewActionClick(_ sender: Any) {
         dismiss(animated: true, completion: nil)
-    }
-    
-    // Check the validate
-    func validateFields() -> String? {
-        // check all field
-        if txtUsername.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || txtEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            txtPassword.text?.trimmingCharacters(in:.whitespacesAndNewlines) == ""{
-            return "Please fill in all field"
-        }
-        // Check password is secure
-        let cleanedPassword = txtPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        if Utilities.isPasswordValid(cleanedPassword) == false {
-            //Password isn't secure enough
-            return "Please make sure your password is at least 8 characters, contains a special characters and number"
-        }
-        
-        return nil
-    }
-    
-    func showError(_ message:String) {
-        errorLabel.text = message
-        errorLabel.alpha = 1
     }
     
     @IBAction func signUpActionClick(_ sender: Any) {
@@ -131,6 +110,7 @@ class SignUpViewController: UIViewController {
                             
                             let profileImageUrl = metadata?.path
                             self.setUserInformation(profileImageUrl: profileImageUrl!, username: username, email: email, uid: uid!)
+
                         }
                     }
                     
@@ -144,6 +124,7 @@ class SignUpViewController: UIViewController {
         
     }
     
+
     func setUserInformation(profileImageUrl: String, username: String, email: String, uid: String) {
         let db = Firestore.firestore()
         print("profile Img URL \(profileImageUrl)")
@@ -153,6 +134,30 @@ class SignUpViewController: UIViewController {
            }
        }
     }
+    //MARK:- Other method
+    
+    // Check the validate
+    func validateFields() -> String? {
+        // check all field
+        if txtUsername.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || txtEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            txtPassword.text?.trimmingCharacters(in:.whitespacesAndNewlines) == ""{
+            return "Please fill in all field"
+        }
+        // Check password is secure
+        let cleanedPassword = txtPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        if Utilities.isPasswordValid(cleanedPassword) == false {
+            //Password isn't secure enough
+            return "Please make sure your password is at least 8 characters, contains a special characters and number"
+        }
+        
+        return nil
+    }
+    
+    func showError(_ message:String) {
+        errorLabel.text = message
+        errorLabel.alpha = 1
+
+    }
     
     func transitionToHome() {
         let homeVC = storyboard?.instantiateViewController(identifier: Constants.Stroryboard.homeViewController) as? HomeViewController
@@ -161,10 +166,9 @@ class SignUpViewController: UIViewController {
         view.window?.rootViewController = homeVC
         view.window?.makeKeyAndVisible()
     }
-    
-
 }
 
+//MARK:- UIImagePickerControllerDelegate, UINavigationControllerDelegate
 extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         print("imga picker")
@@ -179,3 +183,4 @@ extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationCon
         dismiss(animated: true, completion: nil)
     }
 }
+

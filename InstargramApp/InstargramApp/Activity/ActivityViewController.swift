@@ -14,17 +14,27 @@ class ActivityViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.green
+        
+        customNavigationButton()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func transition () {
+        
     }
-    */
+    
+    func customNavigationButton() {
+        Utilities.setupNavigationBar(vc: self , title: "Activity", leftText: "Back", leftImg: nil, leftSelector: #selector(self.actBack(btn:)), rightText: "Right", rightImg: nil, rightSelector: #selector(self.actRestorePurchase), isDarkBackground: false, isTransparent: true)
+    }
+    
+    @objc func actBack(btn: UIBarButtonItem) {
+        
+        print("Tesssstttt")
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func actRestorePurchase() {
+        print("AAAAA")
+    }
 
 }

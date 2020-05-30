@@ -19,13 +19,29 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         btnSignIn.isEnabled = false
         handleTextField()
+        
+    }
+    
+    // Auto login
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        if Auth.auth().currentUser != nil {
+           print("Login user: \(Auth.auth().currentUser!)")
+           Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { (timer) in
+               self.transitionToHome()
+           }
+           
+       }
     }
     
     func handleTextField(){
         txtEmail.addTarget(self, action: #selector(LoginViewController.textFieldDidChange), for: .editingChanged)
+        txtPassword.addTarget(self, action: #selector(LoginViewController.textFieldDidChange), for: .editingChanged)
+
     }
 
     @objc func textFieldDidChange() {
+        
         guard let email = txtEmail.text, !email.isEmpty, let password = txtPassword.text, !password.isEmpty else {
             btnSignIn.setTitleColor(.white, for: .normal)
             btnSignIn.isEnabled = false

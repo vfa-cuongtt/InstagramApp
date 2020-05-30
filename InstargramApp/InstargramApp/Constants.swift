@@ -10,7 +10,9 @@ import Foundation
 
 struct Constants {
     struct Stroryboard {
-       static let homeViewController = "HomeVC"
+        static let homeViewController = "HomeVC"
+        static let LoginViewController = "LoginVC"
+        
     }
     
     struct Storage {

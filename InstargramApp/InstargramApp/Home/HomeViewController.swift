@@ -16,6 +16,21 @@ class HomeViewController: UITabBarController {
         // change color
         view.backgroundColor = UIColor.blue
         print("Home View")
+        
+        customNavigationButton()
     }
 
+    func customNavigationButton() {
+        Utilities.setupNavigationBar(vc: self , title: "Home", leftText: "Back", leftImg: nil, leftSelector: #selector(self.actBack(btn:)), rightText: "Right", rightImg: nil, rightSelector: #selector(self.actRestorePurchase), isDarkBackground: false, isTransparent: true)
+    }
+    
+    @objc func actBack(btn: UIBarButtonItem) {
+        
+        print("Tesssstttt")
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func actRestorePurchase() {
+        print("AAAAA")
+    }
 }

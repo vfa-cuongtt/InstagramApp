@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Instagram Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Egr-X9-ZwT">
-                                <rect key="frame" x="87.499999999999986" y="200" width="200.00000000000003" height="52"/>
+                                <rect key="frame" x="87.5" y="200" width="200" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="DNu-Pc-38d"/>
                                     <constraint firstAttribute="width" constant="200" id="pUC-c9-n3N"/>
@@ -200,7 +200,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder Images" translatesAutoresizingMaskIntoConstraints="NO" id="YpK-sx-LFv">
-                                <rect key="frame" x="137.5" y="145" width="100" height="100.00000000000003"/>
+                                <rect key="frame" x="137.5" y="145" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="SIO-db-Jhq"/>
                                     <constraint firstAttribute="height" constant="100" id="a4L-TS-iTr"/>

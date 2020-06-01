@@ -46,6 +46,11 @@ class SignUpViewController: UIViewController {
 
     }
     
+//    Get position on screen
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     @objc func textFieldDidChange() {
         guard let username = txtUsername.text, !username.isEmpty,
             let email = txtEmail.text, !email.isEmpty,
@@ -85,6 +90,9 @@ class SignUpViewController: UIViewController {
             let username = txtUsername.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = txtEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = txtPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            // Show//hidden keyboard
+            view.endEditing(true)
             
             // Create User
             Auth.auth().createUser(withEmail: email, password: password) { (result , err ) in

@@ -34,6 +34,12 @@ class LoginViewController: UIViewController {
        }
     }
     
+    // Get position on screen
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // Show/ hidden keyboard
+        view.endEditing(true)
+    }
+    
     func handleTextField(){
         txtEmail.addTarget(self, action: #selector(LoginViewController.textFieldDidChange), for: .editingChanged)
         txtPassword.addTarget(self, action: #selector(LoginViewController.textFieldDidChange), for: .editingChanged)
@@ -67,6 +73,9 @@ class LoginViewController: UIViewController {
         // Create cleaned version of the text field
         let email = txtEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = txtPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        // Show/ hidden keyboard
+        view.endEditing(true)
         
         // Signing in the user
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
